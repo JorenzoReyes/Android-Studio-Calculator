@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/fact" />
+
+    <ImageButton
+        android:id="@+id/ans"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ans"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <ImageButton
+        android:id="@+id/mminus"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mminus"
+        app:layout_constraintStart_toEndOf="@+id/div"
+        app:layout_constraintTop_toBottomOf="@+id/mplus" />
+
+    <ImageButton
+        android:id="@+id/mr"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mr"
+        app:layout_constraintStart_toEndOf="@+id/equal"
+        app:layout_constraintTop_toBottomOf="@+id/mminus" />
+
+    <ImageButton
+        android:id="@+id/mplus"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mplus"
+        app:layout_constraintStart_toEndOf="@+id/mult"
+        app:layout_constraintTop_toBottomOf="@+id/ans" />
+
+    <ImageButton
+        android:id="@+id/equal"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/equal"
+        app:layout_constraintStart_toEndOf="@+id/ac"
+        app:layout_constraintTop_toBottomOf="@+id/div" />
+
+    <ImageButton
+        android:id="@+id/div"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/div"
+        app:layout_constraintStart_toEndOf="@+id/exp"
+        app:layout_constraintTop_toBottomOf="@+id/mult" />
+
+    <ImageButton
+        android:id="@+id/mult"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mult"
+        app:layout_constraintStart_toEndOf="@+id/three"
+        app:layout_constraintTop_toBottomOf="@+id/minus" />
+
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sub"
+        app:layout_constraintStart_toEndOf="@+id/six"
+        app:layout_constraintTop_toBottomOf="@+id/plus" />
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add"
+        app:layout_constraintStart_toEndOf="@+id/nine"
+        app:layout_constraintTop_toBottomOf="@+id/mod" />
+
+    <ImageButton
+        android:id="@+id/mod"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/modulo"
+        app:layout_constraintStart_toEndOf="@+id/frac"
+        app:layout_constraintTop_toBottomOf="@+id/natlog" />
+
+    <ImageButton
+        android:id="@+id/natlog"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/natlog"
+        app:layout_constraintStart_toEndOf="@+id/sqrt"
+        app:layout_constraintTop_toBottomOf="@+id/exbase" />
+
+    <ImageButton
+        android:id="@+id/ac"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ac"
+        app:layout_constraintStart_toEndOf="@+id/rnd"
+        app:layout_constraintTop_toBottomOf="@+id/exp" />
+
+    <ImageButton
+        android:id="@+id/three"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/three"
+        app:layout_constraintStart_toEndOf="@+id/two"
+        app:layout_constraintTop_toBottomOf="@+id/six" />
+
+    <ImageButton
+        android:id="@+id/exp"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/exp"
+        app:layout_constraintStart_toEndOf="@+id/pnt"
+        app:layout_constraintTop_toBottomOf="@+id/three" />
+
+    <ImageButton
+        android:id="@+id/six"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/six"
+        app:layout_constraintStart_toEndOf="@+id/five"
+        app:layout_constraintTop_toBottomOf="@+id/nine" />
+
+    <ImageButton
+        android:id="@+id/nine"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nine"
+        app:layout_constraintStart_toEndOf="@+id/eight"
+        app:layout_constraintTop_toBottomOf="@+id/frac" />
+
+    <ImageButton
+        android:id="@+id/sqrt"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/squareroot"
+        app:layout_constraintStart_toEndOf="@+id/imageButton25"
+        app:layout_constraintTop_toBottomOf="@+id/square" />
+
+    <ImageButton
+        android:id="@+id/frac"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fraction"
+        app:layout_constraintStart_toEndOf="@+id/closepar"
+        app:layout_constraintTop_toBottomOf="@+id/sqrt" />
+
+    <ImageButton
+        android:id="@+id/rnd"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rnd"
+        app:layout_constraintStart_toEndOf="@+id/plusminus"
+        app:layout_constraintTop_toBottomOf="@+id/pnt" />
+
+    <ImageButton
+        android:id="@+id/pnt"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/point"
+        app:layout_constraintStart_toEndOf="@+id/zero"
+        app:layout_constraintTop_toBottomOf="@+id/two" />
+
+    <ImageButton
+        android:id="@+id/five"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/five"
+        app:layout_constraintStart_toEndOf="@+id/four"
+        app:layout_constraintTop_toBottomOf="@+id/eight" />
+
+    <ImageButton
+        android:id="@+id/two"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/two"
+        app:layout_constraintStart_toEndOf="@+id/one"
+        app:layout_constraintTop_toBottomOf="@+id/five" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/invcos"
+        app:layout_constraintStart_toEndOf="@+id/ysqrtx"
+        app:layout_constraintTop_toBottomOf="@+id/cube" />
+
+    <ImageButton
+        android:id="@+id/eight"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/eight"
+        app:layout_constraintStart_toEndOf="@+id/seven"
+        app:layout_constraintTop_toBottomOf="@+id/closepar" />
+
+    <ImageButton
+        android:id="@+id/plusminus"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/plusminus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zero" />
+
+    <ImageButton
+        android:id="@+id/seven"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/seven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openpar" />
+
+    <ImageButton
+        android:id="@+id/Sin"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/exponent"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/exponent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Invsin" />
+
+    <ImageButton
+        android:id="@+id/zero"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/one" />
+
+    <ImageButton
+        android:id="@+id/four"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/four"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+    <ImageButton
+        android:id="@+id/one"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/four" />
+
+    <ImageButton
+        android:id="@+id/openpar"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/openpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ysqrtx" />
+
+    <ImageButton
+        android:id="@+id/ysqrtx"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ysquarex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exponent" />
+
+    <ImageButton
+        android:id="@+id/Invsin"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/invsin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sin" />
+
+    <TextView
+        android:id="@+id/Textfield"
+        android:layout_width="359dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/pink"
+        android:text="@string/input"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Tan"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tan"
+        app:layout_constraintStart_toEndOf="@+id/Cos"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/Deg"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/Deg"
+        app:layout_constraintStart_toEndOf="@+id/Tan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Cos"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cos"
+        app:layout_constraintStart_toEndOf="@+id/Sin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Invcos"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/invcos"
+        app:layout_constraintStart_toEndOf="@+id/Invsin"
+        app:layout_constraintTop_toBottomOf="@+id/Cos" />
+
+    <ImageButton
+        android:id="@+id/cube"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cube"
+        app:layout_constraintStart_toEndOf="@+id/exponent"
+        app:layout_constraintTop_toBottomOf="@+id/Invcos" />
+
+    <ImageButton
+        android:id="@+id/cubesqrtx"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cubesquarex"
+        app:layout_constraintStart_toEndOf="@+id/ysqrtx"
+        app:layout_constraintTop_toBottomOf="@+id/cube" />
+
+    <ImageButton
+        android:id="@+id/closepar"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/closepar"
+        app:layout_constraintStart_toEndOf="@+id/openpar"
+        app:layout_constraintTop_toBottomOf="@+id/cubesqrtx" />
+
+    <ImageButton
+        android:id="@+id/invtan"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/invtan"
+        app:layout_constraintStart_toEndOf="@+id/Invcos"
+        app:layout_constraintTop_toBottomOf="@+id/Tan" />
+
+    <ImageButton
+        android:id="@+id/square"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/square"
+        app:layout_constraintStart_toEndOf="@+id/cube"
+        app:layout_constraintTop_toBottomOf="@+id/invtan" />
+
+    <ImageButton
+        android:id="@+id/pie"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pie"
+        app:layout_constraintStart_toEndOf="@+id/invtan"
+        app:layout_constraintTop_toBottomOf="@+id/Deg" />
+
+    <ImageButton
+        android:id="@+id/exbase"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/exponentbase"
+        app:layout_constraintStart_toEndOf="@+id/square"
+        app:layout_constraintTop_toBottomOf="@+id/pie" />
+
+    <ImageButton
+        android:id="@+id/e"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/e"
+        app:layout_constraintStart_toEndOf="@+id/pie"
+        app:layout_constraintTop_toBottomOf="@+id/Rad" />
+
+    <ImageButton
+        android:id="@+id/scienotif"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/scienotif"
+        app:layout_constraintStart_toEndOf="@+id/exbase"
+        app:layout_constraintTop_toBottomOf="@+id/e" />
+
+    <ImageButton
+        android:id="@+id/log"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/log"
+        app:layout_constraintStart_toEndOf="@+id/natlog"
+        app:layout_constraintTop_toBottomOf="@+id/scienotif" />
+
+    <ImageButton
+        android:id="@+id/fact"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/factorial"
+        app:layout_constraintStart_toEndOf="@+id/mod"
+        app:layout_constraintTop_toBottomOf="@+id/log" />
+
+    <CheckBox
+        android:id="@+id/Rad"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/Rad"
+        app:layout_constraintStart_toEndOf="@+id/Deg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

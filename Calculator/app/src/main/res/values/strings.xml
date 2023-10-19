@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="sin">sin</string>
+    <string name="tan">tan</string>
+    <string name="Deg">Deg</string>
+    <string name="Rad">Rad</string>
+    <string name="Sin">Sin</string>
+    <string name="input">"  "0"  "</string>
+</resources>
